@@ -1,59 +1,17 @@
-h1 {
-  color: purple !important;
-  font-size: 66px;
-  font-weight: 900;
-  /* background-color: #e85c0d; */
-  text-decoration: underline;
-  /* text-decoration: overline; */
-  /* text-decoration: line-through; */
-  font-family: Arial, Helvetica, sans-serif;
+.table {
+  border: 1px solid black;
 }
-del {
-  background-color: #e85c0d;
-  /* width: 300px;
-  height: 300px; */
-}
-#rahim {
+
+.table .thead {
+  background-color: black;
   color: white;
 }
-
-.rifat {
-  font-size: 96px;
-}
-.bigText {
-  font-size: 2em;
-  line-height: 44px;
-  word-spacing: 10px;
-  /* font-style: italic; */
-  /* font-style:oblique; */
-  /* font-variant: small-caps; */
-  text-transform: uppercase;
-  text-transform: lowercase;
-  text-transform: capitalize;
-  background-image: url("wood.jpg");
+.table tbody {
+  background-color: yellow;
+  color: black;
 }
 
-.bigText2 {
-  font-size: 2em;
-  line-height: 44px;
-  word-spacing: 10px;
-  /* font-style: italic; */
-  /* font-style:oblique; */
-  /* font-variant: small-caps; */
-  text-transform: uppercase;
-  text-transform: lowercase;
-  text-transform: capitalize;
-  background-image: url("water.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* background-size: contain; */
-  background-position: -17px -20px;
-}
-.body{
-    background-image: url('apple.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-size: contain; */
-    background-position: -17px -20px;
-    
+.table tbody tr {
+  background-color: blue;
+  color: white;
 }
