@@ -1,17 +1,36 @@
-.table {
-  border: 1px solid black;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.table .thead {
-  background-color: black;
-  color: white;
+.wrapper {
+  width: 740px;
+  height: 250px;
+  background-color: green;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  /* overflow: scroll; */
+  overflow: none;
 }
-.table tbody {
-  background-color: yellow;
-  color: black;
+.div {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  background-color: red;
+  float: left;
+  border-left: 1px solid black;
+  border-radius: 50%;
 }
-
-.table tbody tr {
-  background-color: blue;
-  color: white;
+.divlast {
+  border-right: 1px solid black;
+}
+.vanish {
+  display: inline;
+}
+span {
+  display: block;
 }
