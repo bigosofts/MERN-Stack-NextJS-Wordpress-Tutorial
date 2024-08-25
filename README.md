@@ -12,8 +12,8 @@ API Integration
 Responsive Design
 JavaScript Advanced Concepts
 
-কোর্সের প্রতিটি ক্লাসে আমরা হাতে-কলমে কোডিং করবো, এবং কোড সোর্সটি পাবেন আমার গিটহাব রিপোজিটরিতে:  https://github.com/bigosofts
+কোর্সের প্রতিটি ক্লাসে আমরা হাতে-কলমে কোডিং করবো। 
 
-আমার সোশ্যাল মিডিয়া লিংকগুলি এখানে:
+আমার সোশ্যাল মিডিয়া লিংক এখানে:
 
 ফেসবুক: https://www.facebook.com/abdullah.limon
