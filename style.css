@@ -2,7 +2,7 @@
   margin: 0px;
   padding: 0px;
 }
-body,
+/* body,
 html {
   font-family: Roboto, sans-serif, Arial;
   background: #f0f3f0;
@@ -101,4 +101,61 @@ html {
   background-color: blue;
   color: white;
   cursor: pointer;
+}
+
+.img:hover {
+  scale: 105%;
+}
+
+
+/* button:hover{
+  background-color: red;
+} */
+/* button:visited{
+  background-color: black;
+} */
+
+/* p {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+.img:hover p {
+  display: block;
+} */
+
+/* .target::before{
+  content: url("https://png.pngtree.com/thumb_back/fh260/background/20240327/pngtree-abstract-green-nature-bokeh-background-soft-background-blur-of-natural-foliage-image_15646813.jpg")
+  
+} */
+
+/* ::marker { 
+  color: red;
+  font-size: 23px;
+}
+
+h1::selection { 
+  color: red;
+  font-size: 23px;
+} */
+
+/* .cardWrapper:first-child {
+  background-color: #2196f3 !important;
+}  */
+
+p i:first-child {
+  color: blue;
+}
+
+p[title="limon"] {
+  color: pink;
+}
+
+p[title="rifat"] {
+  color: blue;
+}
+
+p:empty{
+  height: 20px;
 }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <body class="body">
+     
+    <title>Savar Govt College</title>
+    <link rel="shortcut icon" type="x icon" href="logo.jpg">
+ <link rel="stylesheet" href="style.css">
+</head  >
+<div class="width-1001">
+ <div class="conteiner">
+  <div class="width-100">
+  <b class="newsfade">News:</b>
+  <marquee class="headquote"> Savar Government college, Savar Dhaka,Estd:1967
+   </marquee>
+   
+  <!--logo-->
+  <div class="width-100 header-menu">
+    <div class="conteiner"> 
+     
+        
+      <ul class="main-menu">
+        </ul>
+        </div>
+    </div>
+  
+  </div>  
+ </div>   
+</div>
+<div class=" home">
+  <ul>
+    <li class="li"><a href="#">Home</a></li> 
+    <li class="li1"><a href="#">Contact</a></li> 
+    <li class="li2"><a href="#">About Us</a></li> 
+  <li class="li2"><a href="#">Admission</a></li> 
+    <li class="li2"><a href="#">Gallary</a></li> 
+  </ul>
+   
+</div> 
+
+  <li><img src="logo.jpg" width="70"/></li> 
+
+  <div class="cardWrapper">
+
+    <div class="img">
+      <img src="download.jpg" sizes="600px;" / >
+      <h1> This is Field</h1>
+      <p class="target">At BigOSofts, I combine my technical skills with a passion for teaching, offering courses that empower developers to excel in modern web development.</p>
+      <button>Click Me</button>
+    </div> 
+  
+    <div class="img">
+      <img src="download.jpg" sizes="600px;" / >
+      <h1> This is Field</h1>
+      <p>At BigOSofts, I combine my technical skills with a passion for teaching, offering courses that empower developers to excel in modern web development.</p>
+      <button>Click Me</button>
+    </div>
+  
+    <div class="img">
+      <img src="download.jpg" sizes="600px;" / >
+      <h1> This is Field</h1>
+      <p>At BigOSofts, I combine my technical skills with a passion for teaching, offering courses that empower developers to excel in modern web development.</p>
+      <button>Click Me</button>
+    </div>
+
+  </div>
+ 
+  <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+  <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+  
+  <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  <ol>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ol>
+
+  
+
+ 
+</body>
+</html>
