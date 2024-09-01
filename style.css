@@ -322,20 +322,22 @@ footer p:nth-child(2) {
     font-size: 45px;
   }
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 380px) {
   .nav {
     flex-direction: column;
   }
   .content {
     padding-top: 180px;
-    left: 10%;
+    left: 0%;
   }
   nav ul li {
     display: block;
   }
   h1,
-  h4 {
+  h4,
+  h3 {
     text-align: center;
+    font-size: 30px;
   }
   .hero {
     height: 100vh;
@@ -346,10 +348,15 @@ footer p:nth-child(2) {
   }
   .About-text {
     text-align: center;
-    padding: 20px 10%;
+    padding: 20px 20%;
+  }
+  .About-text h2 {
+    text-align: center;
+    font-size: 24px;
   }
   .About-text p {
     text-align: justify;
+    padding: 20px 10%;
   }
   .titel {
     width: 100%;
@@ -365,6 +372,10 @@ footer p:nth-child(2) {
     width: 80%;
   }
   .contact-me p {
-    font-size: 24px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .img {
+    width: 80%;
   }
 }
