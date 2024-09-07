@@ -5,12 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document 2</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
     <link type="text/css" rel="stylesheet" href="style.css" />
+    <script>
+      function rifat() {
+        alert("Warning!");
+      }
+    </script>
   </head>
   <body>
-    <!-- <div class="header"></div> -->
-    <div class="leftcontent"></div>
-    <!-- <div class="sidebar"></div>
-    <div class="footer"></div> -->
+    <form onsubmit="rifat()">
+      <label for="firstName">First Name: </label> <br />
+      <input name="firstName" type="text"/ placeholder="Enter your first name">
+      <br /><br />
+
+      <input
+        min="50"
+        max="100"
+        type="number"
+        placeholder="Enter how much manoey do you have?"
+      />
+      <br /><br />
+      <input
+        placeholder="Enter your email"
+        type="email"
+        value="abdullah@gmail.com"
+      />
+      <br /><br />
+      <input type="password" />
+      <br /><br />
+      <input min="2024-09-08" max="2024-09-18" type="date" />
+      <br /><br />
+      <input type="text" placeholder="Enter Husband Name" disabled />
+      <br /><br />
+      <input name="gender" value="male" type="radio" checked /> Male <br />
+      <input name="gender" value="female" type="radio" /> Female <br />
+
+      <br /><br />
+      <select>
+        <option value="id1">Rifat</option>
+        <option value="id2">Limon</option>
+        <option selected value="id3">Tahmid</option>
+      </select>
+      <br /><br />
+      <input type="submit" /> <input type="reset" />
+    </form>
+
+    <div>
+      <br />
+      <br />
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/dHoZ6Vd6HcE?si=M3IBnEG0tuYGSZMA"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+      <br />
+      <br />
+
+      <video
+        controls
+        width="400"
+        poster="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg"
+      >
+        <source type="video/mp4" src="video.mp4" />
+      </video>
+      <br />
+      <br />
+      <audio src="nilakash.m4a" controls />
+    </div>
   </body>
 </html>
