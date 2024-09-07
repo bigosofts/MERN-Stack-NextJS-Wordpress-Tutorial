@@ -1,13 +1,73 @@
-p {
-  color: green;
-  font-size: 50px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-h1 {
-  background-color: black;
-  color: white;
+.header {
+  background: rgb(4, 4, 4);
+  /* background: linear-gradient(
+    180deg,
+    rgba(4, 4, 4, 1) 11%,
+    rgba(204, 100, 71, 1) 53%,
+    rgba(20, 20, 20, 1) 90%
+  ); */
+
+  height: 50px;
+}
+.leftcontent {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  animation-name: rifatbox;
+  animation-duration: 10s;
+  position: relative;
+}
+.sidebar {
+  background-color: blue;
+  height: 600px;
+  width: 30%;
+  float: right;
+}
+.footer {
+  background-color: purple;
+  height: 50px;
+  clear: both;
+}
+@media only screen and (max-width: 380px) {
+  .leftcontent {
+    float: unset;
+    width: 100%;
+  }
+  .sidebar {
+    float: unset;
+    width: 100%;
+  }
 }
 
-#tahmid1 {
-  background-color: purple;
-  color: white;
+@keyframes rifatbox {
+  0% {
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: red;
+  }
+  25% {
+    margin-left: 500px;
+    margin-top: 0px;
+    background-color: blue;
+  }
+  50% {
+    margin-left: 500px;
+    margin-top: 500px;
+    border-radius: 50%;
+    background-color: green;
+  }
+  75% {
+    margin-left: 0px;
+    margin-top: 500px;
+    background-color: red;
+  }
+  100% {
+    margin-left: 0px;
+    margin-top: 0px;
+    background-color: red;
+  }
 }
