@@ -1,9 +1,42 @@
-/* @font-face {
-  font-family: "Protest Guerrilla";
-  src: url("font/sutonnyMJ.ttf");
-} */
+* {
+  margin: 0px;
+  padding: 0px;
+}
 body {
   font-family: "Protest Guerrilla", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+.rifat {
+  background-color: #eaeaea;
+  /* width: 700px; */
+  /* display: flex;
+  justify-content: center;
+  margin: 0px auto;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px; */
+  /* height: 500px; */
+  /* flex-wrap: wrap; */
+  /* flex-wrap: wrap-reverse; */
+  /* display: grid;
+  grid-template-columns: 50% 10% 40%;
+  grid-template-rows: 50vh 10vh auto;
+  column-gap: 50px;
+  row-gap: 100px; */
+}
+.limon {
+  background-color: red;
+  margin-bottom: 20px;
+  /* width: 200px; */
+  height: 200px;
+  /* border-radius: 50%; */
+}
+.rifat:first-child{
+  position: sticky !important;
+}
+@media screen and (max-width: 700px) {
+  /* .rifat {
+    flex-direction: column;
+  } */
 }
