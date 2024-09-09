@@ -26,14 +26,46 @@ body {
   row-gap: 100px; */
 }
 .limon {
-  background-color: red;
+  background-color: green;
   margin-bottom: 20px;
   /* width: 200px; */
   height: 200px;
   /* border-radius: 50%; */
 }
-.rifat:first-child{
+.rifat:first-child {
   position: sticky !important;
+}
+
+.limon1,
+.rifat1 {
+  position: relative;
+}
+.rifat1 {
+  position: sticky;
+  top: 0px;
+  background-color: black;
+}
+
+.limon1 span {
+  position: absolute;
+  top: 90%;
+  right: 40%;
+  z-index: 1;
+}
+.rifat1 span {
+  position: absolute;
+  top: 10%;
+  right: 20%;
+}
+.limon3 {
+  width: 80px;
+  background-color: green;
+  height: 80px;
+  border-radius: 50%;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  box-shadow: 6px 9px 10px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 700px) {
   /* .rifat {
