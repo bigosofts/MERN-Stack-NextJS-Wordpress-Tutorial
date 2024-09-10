@@ -6,69 +6,95 @@ body {
   font-family: "Protest Guerrilla", sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-.rifat {
-  background-color: #eaeaea;
-  /* width: 700px; */
-  /* display: flex;
-  justify-content: center;
-  margin: 0px auto;
-  align-items: center;
-  flex-direction: row;
-  gap: 20px; */
-  /* height: 500px; */
-  /* flex-wrap: wrap; */
-  /* flex-wrap: wrap-reverse; */
-  /* display: grid;
-  grid-template-columns: 50% 10% 40%;
-  grid-template-rows: 50vh 10vh auto;
-  column-gap: 50px;
-  row-gap: 100px; */
-}
-.limon {
-  background-color: green;
-  margin-bottom: 20px;
-  /* width: 200px; */
-  height: 200px;
-  /* border-radius: 50%; */
-}
-.rifat:first-child {
-  position: sticky !important;
+  background-color: #e5e7eb;
 }
 
-.limon1,
-.rifat1 {
-  position: relative;
-}
-.rifat1 {
+.mainHeader {
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
   position: sticky;
   top: 0px;
-  background-color: black;
+}
+.logo {
+  width: 70px;
+}
+.mainNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.limon1 span {
-  position: absolute;
-  top: 90%;
-  right: 40%;
-  z-index: 1;
+.mainNavbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.rifat1 span {
-  position: absolute;
-  top: 10%;
-  right: 20%;
+.mainNavbar ul li {
+  margin: 0px 10px;
+  list-style-type: none;
 }
-.limon3 {
-  width: 80px;
-  background-color: green;
-  height: 80px;
-  border-radius: 50%;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  box-shadow: 6px 9px 10px rgba(0, 0, 0, 0.5);
+.mainNavbar ul li a:hover {
+  color: blue;
+  cursor: pointer;
 }
-@media screen and (max-width: 700px) {
-  /* .rifat {
-    flex-direction: column;
-  } */
+.mainNavbar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.callToAction {
+  background-color: blue;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 10px;
+  transition: 0.5s ease-out;
+  cursor: pointer;
+}
+.callToAction:hover {
+  background-color: black;
+}
+/*Navigation finish*/
+
+.hero {
+  background-image: url("hero.avif");
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1000px;
+}
+
+.heroTitle {
+  width: 70%;
+  text-align: center;
+}
+.heroTitle h1 {
+  font-size: 92px;
+  color: white;
+  word-spacing: 0px;
+  letter-spacing: 8px;
+}
+.heroTitle p {
+  font-size: 28px;
+  margin-top: 20px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.heroTitle button {
+  margin-top: 50px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+
+.heroTitle button:hover {
+  background-color: black;
+  color: white;
 }
