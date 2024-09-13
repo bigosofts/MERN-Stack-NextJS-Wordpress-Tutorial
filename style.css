@@ -11,7 +11,7 @@ body {
 
 .mainHeader {
   background-color: #fff;
-  padding: 10px 20px;
+  padding: 10px 0px;
   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
   position: sticky;
   top: 0px;
@@ -23,6 +23,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 1300px;
+  margin: 0px auto;
 }
 
 .mainNavbar ul {
@@ -65,11 +67,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1000px;
 }
 
 .heroTitle {
-  width: 70%;
+  width: 1300px;
   text-align: center;
 }
 .heroTitle h1 {
@@ -97,4 +98,127 @@ body {
 .heroTitle button:hover {
   background-color: black;
   color: white;
+}
+
+.content {
+  width: 1300px;
+  margin: 100px auto;
+}
+
+.content main {
+  width: 70%;
+  float: left;
+}
+
+.content aside {
+  width: 15%;
+  float: left;
+}
+
+article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  row-gap: 60px;
+  padding-bottom: 100px;
+}
+
+article div {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  height: 400px;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
+}
+article div img {
+  width: 100%;
+  height: 50%;
+  margin-bottom: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+article div h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0px 5%;
+}
+
+article div p {
+  text-align: justify;
+  margin-bottom: 20px;
+  padding: 0px 5%;
+}
+
+article div a {
+  width: 100px;
+  display: block;
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+aside {
+  background-color: #fff;
+  margin-left: 5%;
+  padding: 5%;
+}
+
+aside h2 {
+  margin: 20px 0px;
+}
+aside .firsth2 {
+  margin-top: 0px;
+}
+
+aside ul li {
+  list-style-type: none;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+aside ul li:hover {
+  background-color: purple;
+  color: white;
+}
+
+.tag li {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+}
+footer {
+  clear: both;
+  background-color: black;
+}
+footer section {
+  width: 1300px;
+  margin: 0px auto;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+footer section div img {
+  margin-bottom: 20px;
+}
+footer section div {
+  width: 100%;
+  padding: 20px;
+}
+footer section div p {
+  color: white;
+  text-align: justify;
+}
+footer section div h2 {
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+footer section div ul li {
+  color: white;
+  list-style-type: none;
+}
+footer section div ul{
+  text-align: center;
 }
