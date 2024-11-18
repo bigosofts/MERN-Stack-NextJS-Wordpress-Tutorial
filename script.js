@@ -1,11 +1,10 @@
-// function bulbon() {
-//   document.getElementById("bulb").src = "pic_bulbon.gif";
-// }
+function removeClass() {
+  document.getElementsByClassName("rifat")[0].classList.remove("designed");
+}
 
-// function bulboff() {
-//   document.getElementById("bulb").src = "pic_bulboff.gif";
-// }
+function addClass() {
+  document.getElementById("body");
+}
 
-console.log(10 + 10);
-alert("hello");
-
+// console.log(10 + 10);
+// alert("hello");
