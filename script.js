@@ -33,14 +33,22 @@ function removeClass() {
 
   // alert(numberofStudents[4]);
 
-  let rifat = {
-    name: "limon",
-    age: 29,
-    service: "lecturer",
-    marks: [2, 5, 8, 10, 14],
+  let car = {
+    name: "limon", //property
+    model: 29,
+    weight: "lecturer",
+    color: [2, 5, 8, 10, 14],
+    getColor: function () {
+      alert(this.name);
+    }, //method
   };
 
-  alert(rifat.marks[4]);
+  
+  let set = "name";
+
+  // alert(car["name"])
+
+  car.getColor();
 }
 // function addClass() {
 //   document.getElementById("body");
@@ -48,3 +56,17 @@ function removeClass() {
 
 // console.log(10 + 10);
 // alert("hello");
+
+// let a = 10; //assignment
+// let b = 20 % 8; //modulas
+// let c = 10 < 20; // comparision
+// let d = d--; //increment
+// let e = 5 ** 2;
+
+function yahia() {
+  let x = 10;
+  let z = x * 100;
+  alert(z);
+}
+
+// yahia();
