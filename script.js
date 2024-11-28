@@ -7,11 +7,11 @@ function removeClass() {
   let c = null; // bostu ase kintu man nai
   let d = Infinity;
 
-  let limon = {
-    name: "limon",
-    age: 29,
-    service: "lecturer",
-  };
+  // let limon = {
+  //   name: "limon",
+  //   age: 29,
+  //   service: "lecturer",
+  // };
 
   let classNine = [
     {
@@ -43,7 +43,6 @@ function removeClass() {
     }, //method
   };
 
-  
   let set = "name";
 
   // alert(car["name"])
@@ -70,3 +69,24 @@ function yahia() {
 }
 
 // yahia();
+
+let students = [
+  {
+    name: "limon",
+    roll: 1,
+    sibling: ["a", "b"],
+    getData: function () {
+      console.log(this.name + " " + this.roll);
+    },
+  },
+  {
+    name: "rifat",
+    roll: 2,
+    sibling: ["sumaiya", "d"],
+  },
+];
+
+//loop
+for (let i = 1; i <= 30; i++) {
+  document.write("<br> "+i);
+}
