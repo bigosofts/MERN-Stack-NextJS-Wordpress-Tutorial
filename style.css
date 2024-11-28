@@ -1,0 +1,17 @@
+.table {
+  border: 1px solid black;
+}
+
+.table .thead {
+  background-color: black;
+  color: white;
+}
+.table tbody {
+  background-color: yellow;
+  color: black;
+}
+
+.table tbody tr {
+  background-color: blue;
+  color: white;
+}
