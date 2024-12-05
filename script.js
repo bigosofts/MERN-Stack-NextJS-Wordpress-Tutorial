@@ -6,7 +6,9 @@ function removeClass() {
   let b = undefined; // bostu nai
   let c = null; // bostu ase kintu man nai
   let d = Infinity;
+  let rifat = { name: "rifat", age: 20, eyeColor: "#000", baby: [5, 6, 7, 8] };
 
+  rifat.baby[3]; //8
   // let limon = {
   //   name: "limon",
   //   age: 29,
@@ -42,6 +44,7 @@ function removeClass() {
       alert(this.name);
     }, //method
   };
+  car.getColor();
 
   let set = "name";
 
@@ -113,6 +116,12 @@ let rifat = {
   },
 };
 
+// function addition(rifatAge, yahiaAge) {
+//   alert(rifatAge + yahiaAge); //parameter
+// }
+
+// addition(18, 25); //argument
+
 let students = [1, 2, 10, 20];
 
 //array loop - iteration
@@ -144,5 +153,24 @@ const numbers = [45, 4, 9, 16, 25];
 let sum = numbers.reduce(function myFunction(total, item) {
   return total + item;
 });
+let classe = 10;
+
+if (classe == 12) {
+  alert("রিফাত দ্বাদশ শ্রেনীতে পড়ে  ");
+} else if (classe == 11) {
+  alert("রিফাত একাদশ  শ্রেনীতে পড়ে  ");
+}else if (classe == 11) {
+  alert("রিফাত একাদশ  শ্রেনীতে পড়ে  ");
+}else if (classe == 11) {
+  alert("রিফাত একাদশ  শ্রেনীতে পড়ে  ");
+}else if (classe == 11) {
+  alert("রিফাত একাদশ  শ্রেনীতে পড়ে  ");
+}else if (classe == 11) {
+  alert("রিফাত একাদশ  শ্রেনীতে পড়ে  ");
+} else {
+  alert("রিফাত পড়াশোনাই করে না  ");
+}
+
+// 20 == 30 ? alert("কেমন আছেন? ") : alert("ভালো নাই"); //ternary operator
 
 document.getElementById("catch2").innerHTML = "The sum is " + sum;
