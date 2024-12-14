@@ -1,57 +1,57 @@
-function removeClass() {
-  const x = 10; //number
-  let y = "10"; //string
-  let z = true; //boolean
-  let a = NaN; //number hobe na
-  let b = undefined; // bostu nai
-  let c = null; // bostu ase kintu man nai
-  let d = Infinity;
-  let rifat = { name: "rifat", age: 20, eyeColor: "#000", baby: [5, 6, 7, 8] };
+// function removeClass() {
+//   const x = 10; //number
+//   let y = "10"; //string
+//   let z = true; //boolean
+//   let a = NaN; //number hobe na
+//   let b = undefined; // bostu nai
+//   let c = null; // bostu ase kintu man nai
+//   let d = Infinity;
+//   let rifat = { name: "rifat", age: 20, eyeColor: "#000", baby: [5, 6, 7, 8] };
 
-  rifat.baby[3]; //8
-  // let limon = {
-  //   name: "limon",
-  //   age: 29,
-  //   service: "lecturer",
-  // };
+//   rifat.baby[3]; //8
+//   // let limon = {
+//   //   name: "limon",
+//   //   age: 29,
+//   //   service: "lecturer",
+//   // };
 
-  let classNine = [
-    {
-      name: "limon",
-      age: 29,
-      service: "lecturer",
-    },
-    {
-      name: "rifat",
-      age: 18,
-      service: "lecturer",
-    },
-    {
-      name: "yahia",
-      age: 24,
-      service: "lecturer",
-    },
-  ]; //array
+//   let classNine = [
+//     {
+//       name: "limon",
+//       age: 29,
+//       service: "lecturer",
+//     },
+//     {
+//       name: "rifat",
+//       age: 18,
+//       service: "lecturer",
+//     },
+//     {
+//       name: "yahia",
+//       age: 24,
+//       service: "lecturer",
+//     },
+//   ]; //array
 
-  // alert(numberofStudents[4]);
+//   // alert(numberofStudents[4]);
 
-  let car = {
-    name: "limon", //property
-    model: 29,
-    weight: "lecturer",
-    color: [2, 5, 8, 10, 14],
-    getColor: function () {
-      alert(this.name);
-    }, //method
-  };
-  car.getColor();
+//   let car = {
+//     name: "limon", //property
+//     model: 29,
+//     weight: "lecturer",
+//     color: [2, 5, 8, 10, 14],
+//     getColor: function () {
+//       alert(this.name);
+//     }, //method
+//   };
+//   car.getColor();
 
-  let set = "name";
+//   let set = "name";
 
-  // alert(car["name"])
+//   // alert(car["name"])
 
-  car.getColor();
-}
+//   car.getColor();
+// }
 // function addClass() {
 //   document.getElementById("body");
 // }
@@ -65,11 +65,11 @@ function removeClass() {
 // let d = d--; //increment
 // let e = 5 ** 2;
 
-function yahia() {
-  let x = 10;
-  let z = x * 100;
-  alert(z);
-}
+// function yahia() {
+//   let x = 10;
+//   let z = x * 100;
+//   alert(z);
+// }
 
 // yahia();
 
@@ -94,7 +94,7 @@ function yahia() {
 //   document.write("<br> " + i);
 // }
 
-let i = 11;
+// let i = 11;
 
 // while (i < 10) {
 //   document.write("<br> " + i);
@@ -108,13 +108,13 @@ let i = 11;
 // {
 //   document.write("<br> " + i);
 // }
-let rifat = {
-  name: "rifat",
-  age: 18,
-  forEach: function () {
-    console.log(this.name);
-  },
-};
+// let rifat = {
+//   name: "rifat",
+//   age: 18,
+//   forEach: function () {
+//     console.log(this.name);
+//   },
+// };
 
 // function addition(rifatAge, yahiaAge) {
 //   alert(rifatAge + yahiaAge); //parameter
@@ -122,9 +122,10 @@ let rifat = {
 
 // addition(18, 25); //argument
 
-let students = [1, 2, 10, 20];
+// let students = [1, 2, 10, 20];
 
 //array loop - iteration
+
 // students.forEach(function (item) {
 //   document.write(item + "<br>");
 // });
@@ -149,28 +150,49 @@ let students = [1, 2, 10, 20];
 //   item == "yahia" ? true : false;
 // });
 
-const numbers = [45, 4, 9, 16, 25];
-let sum = numbers.reduce(function myFunction(total, item) {
-  return total + item;
-});
-let classe = 10;
+// const numbers = [45, 4, 9, 16, 25];
 
-if (classe == 12) {
-  alert("রিফাত দ্বাদশ শ্রেনীতে পড়ে  ");
-} else if (classe == 11) {
-  alert("রিফাত একাদশ  শ্রেনীতে পড়ে  ");
-}else if (classe == 11) {
-  alert("রিফাত একাদশ  শ্রেনীতে পড়ে  ");
-}else if (classe == 11) {
-  alert("রিফাত একাদশ  শ্রেনীতে পড়ে  ");
-}else if (classe == 11) {
-  alert("রিফাত একাদশ  শ্রেনীতে পড়ে  ");
-}else if (classe == 11) {
-  alert("রিফাত একাদশ  শ্রেনীতে পড়ে  ");
-} else {
-  alert("রিফাত পড়াশোনাই করে না  ");
-}
+// numbers.forEach();
+// let sum = numbers.reduce(function myFunction(total, item) {
+//   return total + item;
+// });
+// let classe = 10;
+
+// if (classe == 12) {
+//   alert("রিফাত দ্বাদশ শ্রেনীতে পড়ে  ");
+// } else if (classe == 11) {
+//   alert("রিফাত একাদশ  শ্রেনীতে পড়ে  ");
+// }else if (classe == 11) {
+//   alert("রিফাত একাদশ  শ্রেনীতে পড়ে  ");
+// }else if (classe == 11) {
+//   alert("রিফাত একাদশ  শ্রেনীতে পড়ে  ");
+// }else if (classe == 11) {
+//   alert("রিফাত একাদশ  শ্রেনীতে পড়ে  ");
+// }else if (classe == 11) {
+//   alert("রিফাত একাদশ  শ্রেনীতে পড়ে  ");
+// } else {
+//   alert("রিফাত পড়াশোনাই করে না  ");
+// }
 
 // 20 == 30 ? alert("কেমন আছেন? ") : alert("ভালো নাই"); //ternary operator
 
-document.getElementById("catch2").innerHTML = "The sum is " + sum;
+let database = {
+  name: "Limon",
+  age: 30,
+  education: "Lecturer",
+};
+
+function fetchData(cv) {
+  let name = database.name;
+  let age = database.age;
+  let education = database.education;
+  cv(name, age, education);
+}
+
+function CVMaker(name, age, education) {
+  document.getElementById(
+    "catch2"
+  ).innerHTML = `Name: ${name}<br/> Age: ${age}<br/> Education: ${education}`;
+}
+
+fetchData(CVMaker);
