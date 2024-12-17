@@ -176,23 +176,40 @@
 
 // 20 == 30 ? alert("কেমন আছেন? ") : alert("ভালো নাই"); //ternary operator
 
-let database = {
-  name: "Limon",
-  age: 30,
-  education: "Lecturer",
+// let database = {
+//   name: "Limon",
+//   age: 30,
+//   education: "Lecturer",
+// };
+
+// function fetchData(cv){
+//   let name = database.name;
+//   let age = database.age;
+//   let education = database.education;
+//   cv(name, age, education);
+// }
+
+// function CVMaker(name, age, education) {
+//   document.getElementById(
+//     "catch2"
+//   ).innerHTML = `Name: ${name}<br/> Age: ${age}<br/> Education: ${education}`;
+// }
+
+// fetchData(CVMaker);
+
+// let text = "Apple, Banana, Kiwi, Apple";
+// // let part = text.slice(7,13);
+// let text2 = text.replace("Apple", "Guava");
+
+let text = "a,b,c,d,e,f";
+const myArray = text;
+
+function rifat(a, b) {
+  console.log(a);
+}
+
+let rifat = (a, b) => {
+  console.log(a);
 };
 
-function fetchData(cv) {
-  let name = database.name;
-  let age = database.age;
-  let education = database.education;
-  cv(name, age, education);
-}
-
-function CVMaker(name, age, education) {
-  document.getElementById(
-    "catch2"
-  ).innerHTML = `Name: ${name}<br/> Age: ${age}<br/> Education: ${education}`;
-}
-
-fetchData(CVMaker);
+console.log(myArray);
