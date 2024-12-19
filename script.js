@@ -1,32 +1,51 @@
-//constructor function
-// let rifat = {
-//   name: "rifat",
-//   age: 18,
-// };
+function c() {
+  setTimeout(function () {
+    console.log("delay");
+  }, 5000);
+  setTimeout(function () {
+    console.log("delay");
+  }, 5000);
 
-// let yahia = {
-//   name: "yahia",
-//   age: 26,
-// };
+  fetch("https://www.google.com").then((res) => console.log("Data found"));
+  fetch("https://www.google.com").then((res) => console.log("Data found 2"));
 
-// let limon = {
-//   name: "limon",
-//   age: 30,
-// };
+  console.log("c");
+}
 
-// function Person(age, name) {
-//   this.name = name;
-//   this.age = age;
-// }
+function b() {
+  c();
+  console.log("b");
+}
 
-// let limon = new Person(30, "limon");
-// let yahia = new Person(26, "yahia");
-// let rifat = new Person(18, "rifat");
+function a() {
+  b();
+  console.log("a");
+}
 
-// alert(yahia.age);
+a();
 
-let text = "Please locate where 'locate' occurs!";
+//running mechanism
 
-let index = text.search("locate");
+//v8 engine
 
-document.write(index);
+// Code -> Parser -> AST -> Interpreter -> Bytecode -> compiler -> machine code
+
+//first step
+
+//1. global execution context
+// 1a) creation
+// 1b) execution
+
+//2. a function execution context
+// 1a) creation
+// 1b) execution
+
+//3. b function execution context
+// 1a) creation
+// 1b) execution
+
+//4. c function execution context
+// 1a) creation
+// 1b) execution
+
+//hoisting
