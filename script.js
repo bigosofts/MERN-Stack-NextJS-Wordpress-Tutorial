@@ -1,51 +1,36 @@
-function c() {
-  setTimeout(function () {
-    console.log("delay");
-  }, 5000);
-  setTimeout(function () {
-    console.log("delay");
-  }, 5000);
+//Javascript Closure
 
-  fetch("https://www.google.com").then((res) => console.log("Data found"));
-  fetch("https://www.google.com").then((res) => console.log("Data found 2"));
+// function hello() {
+//   var a = 10;
+//   var b = 20;
+//   function rifat() {
+//     console.log("Rifat Age " + a + b);
+//   }
+//   return rifat;
+// }
 
-  console.log("c");
+// var rifat = hello();
+
+// console.dir(rifat);
+
+//javascript prototype
+
+//function Constructor
+
+function Rifat(name, age) {
+  this.name = name;
+  this.age = age;
 }
 
-function b() {
-  c();
-  console.log("b");
-}
+var rifatObject = new Rifat("rifat", 18);
+var yahiaObject = new Rifat("yahia", 25);
 
-function a() {
-  b();
-  console.log("a");
-}
+console.log(yahiaObject);
 
-a();
+var a = new Object(); //{}
 
-//running mechanism
+var b = new Array(); //[]
 
-//v8 engine
+var c = new String();
 
-// Code -> Parser -> AST -> Interpreter -> Bytecode -> compiler -> machine code
-
-//first step
-
-//1. global execution context
-// 1a) creation
-// 1b) execution
-
-//2. a function execution context
-// 1a) creation
-// 1b) execution
-
-//3. b function execution context
-// 1a) creation
-// 1b) execution
-
-//4. c function execution context
-// 1a) creation
-// 1b) execution
-
-//hoisting
+var d = new Boolean();
