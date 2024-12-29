@@ -1,44 +1,70 @@
-//function Constructor
+//arrow function
+// let rifat = (a, b) => console.log(a + b);
 
-// function Rifat(name, age) {
+//immediately invoked Function Expression  IIFE
+
+// (function rifat2() {
+//   var a = 10;
+//   console.log("Yahia" + 10);
+// })();
+
+// let rifat23 = (function () {
+//   return 10;
+// })();
+// console.log(rifat23)
+
+//this keyword
+//global context this = window  , function e this er man window
+//object er vitore function a this thakle ta hobe oi object tai
+
+// var a = {
+//   age: 10,
+//   limon: {
+//     age: 30,
+//     rifat: function () {
+//       console.log(this);
+//     },
+//   },
+// };
+
+// a.limon.rifat();
+
+//new keyword rules
+
+// function Yahia(name, age) {
 //   this.name = name;
 //   this.age = age;
 // }
 
-// var rifatObject = new Rifat("rifat", 18);
-// var yahiaObject = new Rifat("yahia", 25);
+// let rifat = new Yahia("rifat", 18);
 
-// Rifat.prototype.fullName = function () {
-//   console.log(this.name + " " + this.age);
+// let yahia = new Yahia("Yahia", 25);
+
+// console.log(yahia);
+
+//specific rules
+// var b ={
+
+// }
+// var a = {
+//   age: 10,
+//   limon: {
+//     age: 30,
+//     rifat: function (a, b) {
+//       console.log(this);
+//     },
+//   },
 // };
 
-// rifatObject.fullName();
-// yahiaObject.fullName();
+///advanced this
 
-//Javascript Scope
+var limon = {
+  name: "yahia",
+  rifat: function () {
+    setTimeout(() => {
+      console.log(this.name);
+    }, 1000);
+  },
+};
 
-var a = 10;
-
-function rifat() {
-  let a  = 30;
-  function yahia() {
-    console.log("Rifat age is: " + a);
-  }
-  yahia();
-}
-
-rifat();
-
-// বাইরে যদি ভ্যারিএবল লিখি তাইলে গ্লোবাল স্কোপ 
-
-// ফাংশনের ভিতর যদি ডিক্লেয়ার না করে আসাইন করে দাও দাও সেটা সেটা হবে গ্লোবাল স্কোপ
-
-// ফাংশনের ভিতরে ডিক্লেয়ার প্লাস আসাইন করা হলে সেটা হবে লোকাল স্কোপ।
-
-// কোন ফাংশনের পেটের ভিতর আরো ফাংশন থাকলে তারাও সেই ভ্যারিএবল স্কোপ পাবে এটাকে বলে লেক্সিকাল স্কোপ।
-
-
-// var ফাংশন স্কোপ মেইন্টেইন করে , তবে let and const ব্লক স্কোপ মেইন্টেইন করে । 
-
-// let কে রিএসাইন করা যায়, তবে const  কে রিএসাইন করা যায় না । 
-
+limon.rifat();
