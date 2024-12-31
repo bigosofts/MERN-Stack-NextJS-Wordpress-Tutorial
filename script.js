@@ -1,70 +1,60 @@
-//arrow function
-// let rifat = (a, b) => console.log(a + b);
+//javascript inheritence
 
-//immediately invoked Function Expression  IIFE
+//Easy inheritence
 
-// (function rifat2() {
-//   var a = 10;
-//   console.log("Yahia" + 10);
-// })();
+//Moderate inheritence
 
-// let rifat23 = (function () {
-//   return 10;
-// })();
-// console.log(rifat23)
+// Intermediate inheritance
 
-//this keyword
-//global context this = window  , function e this er man window
-//object er vitore function a this thakle ta hobe oi object tai
-
-// var a = {
-//   age: 10,
-//   limon: {
-//     age: 30,
-//     rifat: function () {
-//       console.log(this);
-//     },
-//   },
-// };
-
-// a.limon.rifat();
-
-//new keyword rules
-
-// function Yahia(name, age) {
-//   this.name = name;
-//   this.age = age;
+// function Human(eye, leg) {
+//   this.eye = eye;
+//   this.leg = leg;
 // }
 
-// let rifat = new Yahia("rifat", 18);
+// function Rifat(age, name, eye, leg) {
+//   Human.call(this, eye, leg);
+//   this.age = age;
+//   this.name = name;
+// }
+// Rifat.prototype.getAge = function () {
+//   console.log("Age is " + this.age);
+// };
 
-// let yahia = new Yahia("Yahia", 25);
+// let rifat = new Rifat(18, "Rifat", "red", "Long");
+// let yahia = new Rifat(28, "Yahia", "black", "short");
 
 // console.log(yahia);
 
-//specific rules
-// var b ={
-
-// }
-// var a = {
-//   age: 10,
-//   limon: {
-//     age: 30,
-//     rifat: function (a, b) {
-//       console.log(this);
-//     },
+// let rifat = {
+//   name: "Rifat",
+//   age: 18,
+//   getAge: function () {
+//     console.log(this.age);
 //   },
 // };
 
-///advanced this
+// let yahia = Object.create(rifat);
 
-var limon = {
-  name: "yahia",
-  rifat: function () {
-    setTimeout(() => {
-      console.log(this.name);
-    }, 1000);
-  },
-};
+// console.log(yahia);
 
-limon.rifat();
+class Human {
+  constructor(leg, eye) {
+    this.eye = eye; // Assign the name
+    this.leg = leg; // Assign the age
+  }
+  getAge() {
+    console.log("Age is " + this.age);
+  }
+}
+
+class Rifat extends Human {
+  constructor(age, name, leg, eye) {
+    super(leg, eye);
+    this.name = name;
+    this.age = age;
+  }
+}
+
+let rifat = new Rifat(25, "Rifat", 2, "brown");
+
+
