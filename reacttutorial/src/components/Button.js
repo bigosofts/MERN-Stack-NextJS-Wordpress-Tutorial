@@ -7,15 +7,15 @@ import React from "react";
 //     </button>
 //   );
 // }
+import { useState } from "react";
+function ButtonComponent({ text, color, addi, changeState }) {
+  //[value, setvalue]
 
-class ButtonComponent extends React.Component {
-  render() {
-    return (
-      <button style={{ backgroundColor: this.props.color }} className="btn">
-        {this.props.text}
-      </button>
-    );
-  }
+  return (
+    <button onClick={changeState} style={{ backgroundColor: color }} className="btn">
+      {text} {addi}
+    </button>
+  );
 }
 
 export default ButtonComponent;
