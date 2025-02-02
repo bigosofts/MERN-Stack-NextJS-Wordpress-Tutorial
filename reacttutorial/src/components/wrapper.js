@@ -1,14 +1,9 @@
-import ButtonComponent from "./Button";
 
-export default function Wrapper({ value, changeState }) {
+import WrapperTwo from "./wrapperTwo";
+export default function Wrapper() {
   return (
     <span style={{ backgroundColor: "green", padding: "10px 20px" }}>
-      <ButtonComponent
-        text="read more"
-        color="purple"
-        addi={value}
-        changeState={changeState}
-      ></ButtonComponent>
+     <WrapperTwo/>
     </span>
   );
 }

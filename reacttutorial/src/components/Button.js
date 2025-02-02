@@ -1,21 +1,18 @@
 import "./Button.css";
-import React from "react";
-// function ButtonComponent({ text, color }) {
-//   return (
-//     <button style={{ backgroundColor: color }} className="btn">
-//       {text}
-//     </button>
-//   );
-// }
-import { useState } from "react";
-function ButtonComponent({ text, color, addi, changeState }) {
-  //[value, setvalue]
+import withValueState from "./hoc/withBackground";
 
+function ButtonComponent({ text, color, addi, changeState }) {
   return (
-    <button onClick={changeState} style={{ backgroundColor: color }} className="btn">
+    <button
+      onClick={changeState}
+      style={{ backgroundColor: color }}
+      className="btn"
+    >
       {text} {addi}
     </button>
   );
 }
 
-export default ButtonComponent;
+let updatedComponent = withValueState(ButtonComponent);
+
+export default updatedComponent;
