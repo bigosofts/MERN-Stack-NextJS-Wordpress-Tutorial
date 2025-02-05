@@ -1,20 +1,16 @@
 import ButtonComponent from "./components/Button";
-import Wrapper from "./components/wrapper";
-// Previous class
-
-import Output from "./components/enhanced";
-/// props receive function/class
-// State define function/class
-// lifecycle methid function/class
+import Shadow from "./components/composition/Shadow";
 
 export default function App() {
-
   return (
     <>
-      <h1>Rifat</h1>
-      <ButtonComponent text="click me" color="red"></ButtonComponent>
-      <Wrapper/>
-      <Output />
+      <Shadow>{() => <span>Rifat</span>}</Shadow>
+
+      <Shadow>
+        {(value) => (
+          <ButtonComponent text="click me" color="red" something={value} />
+        )}
+      </Shadow>
     </>
   );
 }

@@ -1,18 +1,11 @@
 import "./Button.css";
-import withValueState from "./hoc/withBackground";
 
-function ButtonComponent({ text, color, addi, changeState }) {
+function ButtonComponent({ text, color, children, something }) {
   return (
-    <button
-      onClick={changeState}
-      style={{ backgroundColor: color }}
-      className="btn"
-    >
-      {text} {addi}
+    <button style={{ backgroundColor: color }} className="btn">
+      {text} {something}
     </button>
   );
 }
 
-let updatedComponent = withValueState(ButtonComponent);
-
-export default updatedComponent;
+export default ButtonComponent;
