@@ -1,21 +1,21 @@
 import { useContext } from "react";
-import { ThemeContext } from "./Context/ThemeProvider";
+import { ThemeContext } from "../App";
+import ButtonWrapper from "./bittonWrapper";
 
-const ThemeToggleButton = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext);
-
+const ThemeToggoleButton = () => {
+  const { theme } = useContext(ThemeContext);
   return (
     <div
       style={{
-        background: theme === "light" ? "#fff" : "#333",
-        color: theme === "light" ? "#000" : "#fff",
+        background: theme == "light" ? "#fff" : "#333",
+        color: theme == "light" ? "#333" : "#fff",
         padding: "20px",
       }}
     >
-      <h2>Current Theme: {theme}</h2>
-      <button onClick={toggleTheme}>Toggle Theme</button>
+      <h1>Current Theme: {theme}</h1>
+      <ButtonWrapper />
     </div>
   );
 };
 
-export default ThemeToggleButton;
+export default ThemeToggoleButton;
